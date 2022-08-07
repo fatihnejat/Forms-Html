@@ -10,16 +10,64 @@
     <h1>Netflix'e Hoş Geldiniz</h1>
 
     <form action="result.html" method="get">
-        
+
+        <div>
+
         <label for="name">Adınızı Giriniz:</label>
-        <input type="text" name="isim" id="name">
+        <input type="text" name="isim" id="name" placeholder="İsminizi giriniz" required>
         <br>
         <label for="surname">Soyadınızı Giriniz:</label>
-        <input type="text" name="soyisim" id="surname">        
+        <input type="text" name="soyisim" id="surname" placeholder="Soyad Giriniz" required >  
+        
+        </div>
 
+        <div>
+            <label for="password">Parolanızı Giriniz:</label>
+            <input type="password" name="parola" id="password" required>
 
+        </div>
+
+        <div>
+            <p>Cinsiyetinizi Seçiniz: </p>
+            <label for="cinsiyet">Erkek</label>
+            <input type="radio" name="gender" id="cinsiyet" value="erkek" >
+            <label for="cinsiyet">Kadın</label>
+            <input type="radio" name="gender" id="cinsiyet" value="kadın"> 
+            <br><br><br>
+
+        </div>
+
+        <div>
+            <label for="Yaş">Doğum Tarihinizi Gİriniz:</label>
+            <input type="date" name="Doğum Tarihi" id="Yaş" min="2020-05-20">
+
+        </div>
+
+        <div>
+            <p>İlgi alanlarınız işaretleyiniz</p>
+            <input type="checkbox" name="ilgi alanları-1" id="Business" value="Business">
+            <label for="Business"> Business</label>
+            <br>
+            <input type="checkbox" name="ilgi alanları-2" id="Trade" value="Trade">
+            <label for="Trade"> Trade</label>
+            <br>
+            <input type="checkbox" name="ilgi alanları-3" id="Start-up" value="Start-up">
+            <label for="Start-up"> Start-up</label>
+            <br>
+            <input type="checkbox" name="ilgi alanları-4" id="Food" value="Food">
+            <label for="Food"> Food</label>
+            <br>
+            <input type="checkbox" name="ilgi alanları-5" id="Travel" value="Travel">
+            <label for="Travel"> Travel</label>
+            <input type="checkbox" name="ilgi alanları-6" id="Vegan" value="Vegan">
+            <label for="Vegan">Vegan</label>
+
+        </div>
+        
         <br><br><br>
         <input type="submit" value="Giriş Yap">
+        <br><br>
+        <input type="reset" value="Sıfırla">
     </form>
 
 </body>
