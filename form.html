@@ -5,6 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        #dessert2{
+            width: 20%;
+           }
+
+        #yorum{
+            resize: none;
+            width: 280px;
+            height: 200px;
+        }
+        
+        #fieldset{
+            width: 480px;
+        }
+
+
+    </style>
+
+
 </head>
 <body>
     <h1>Netflix'e Hoş Geldiniz</h1>
@@ -40,6 +59,20 @@
         <div>
             <label for="Yaş">Doğum Tarihinizi Gİriniz:</label>
             <input type="date" name="Doğum Tarihi" id="Yaş" min="2020-05-20">
+            <br><br>
+
+        </div>
+
+        <div>
+            <label for="">E-mailinizi giriniz:</label>
+            <input type="email" name="email" id="mail">
+            
+        </div>
+        <br>
+
+        <div>
+            <label for="tel no">Telefon numaranızı giriniz: </label>
+            <input type="tel" name="telefon numarası" id=" tel no" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="(5xx)-xxx-xx-xx">
 
         </div>
 
@@ -61,9 +94,87 @@
             <label for="Travel"> Travel</label>
             <input type="checkbox" name="ilgi alanları-6" id="Vegan" value="Vegan">
             <label for="Vegan">Vegan</label>
+            
+
+        </div>
+        <br>
+
+        <div>
+            <label for="dessert">Your favorite desserts:</label>
+            <br>
+            <select name="Chosen desserts" id="dessert" multiple size="3">
+                <option value="Sütlaç">Sütlaç</option>
+                <option value="Kazandibi">Kazandibi</option>
+                <option value="Tulumba">Tulumba</option>
+                <option value="Baklava">Baklava</option>
+            </select>
+        </div>
+        <br>
+        
+        <div>
+            <label for="dessert2">Your favorite desserts:</label>
+            <br>
+            <select name="Chosen desserts" id="dessert2" multiple size="8">
+                <optgroup label="Sütlü Tatlılar">
+                    <option value="Sütlaç">Sütlaç</option>
+                    <option value="Kazandibi">Kazandibi</option>
+                    <option value="Tulumba">Tulumba</option>
+                    <option value="Baklava">Baklava</option>
+                </optgroup>
+
+                <optgroup label="Efsaneler">
+                    <option value="Tulumba">Tulumba</option>
+                    <option value="Vezir Parmağı">Vezir Parmağı</option>
+                    <option value="Künefe">Künefe</option>
+                    <option value="Kadayıf">Kadayıf</option>
+                </optgroup>
+
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="yorum">Yorumunuz: </label>
+            <br>
+            <textarea name="yorum:" id="yorum" >
+
+            </textarea>
 
         </div>
         
+
+        <div>
+            <label for="Dosya">Dosya seçiniz:</label>
+            <input type="file" name="seçilen dosya" id="dosya">
+        </div>
+
+        <div>
+            <label for="input_browsers">Which Browsers you use ?</label>
+            <br>
+            <input type="text" name="Seçilen browser" id="input_browsers" list="browsers">
+
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Safari"></option>
+                <option value="Firefox"></option>
+
+            </datalist>
+
+        </div>
+        <br><br>
+
+        <div>
+            <fieldset id="fieldset">
+                <legend>Personal İnfo:</legend>
+                <label for="fname">Your Name:</label>
+                <input type="text" name="isim" id="fname">
+                <br>
+                <label for="sname">Your Surname:</label>
+                <input type="text" name="Soyad" id="sname">
+
+            </fieldset>
+        </div>
+     
         <br><br><br>
         <input type="submit" value="Giriş Yap">
         <br><br>
